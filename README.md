@@ -22,6 +22,10 @@ nx add @nx/next
 nx g @nx/next:app <your-app-name>
 
 nx g @nrwl/react:library ui
+
+nx add @nx/expo
+
+nx g @nx/expo:app <your-app-name>
 ```
 
 Learn more about [code generators](https://nx.dev/features/generate-code) and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.

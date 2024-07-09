@@ -5,6 +5,6 @@ type Colors = {
 }
 
 export const colors: Colors = {
-  primary: 'black',
+  primary: '#E29578',
   secondary: 'blue'
 };

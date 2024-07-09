@@ -1,0 +1,9 @@
+{
+  "name": "expo-dashboard-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "packages/expo-dashboard-e2e/src",
+  "implicitDependencies": ["expo-dashboard"],
+  "// targets": "to see all targets run: nx show project expo-dashboard-e2e --web",
+  "targets": {}
+}
