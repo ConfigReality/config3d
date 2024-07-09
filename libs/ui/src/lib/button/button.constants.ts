@@ -1,11 +1,10 @@
-export const colors = {
-  primary: 'lightblue',
-  secondary: 'blue',
-  danger: 'red',
-  white: 'white',
-  black: 'black',
-  grey: 'grey',
-  lightGrey: 'lightgrey',
-  darkGrey: 'darkgrey',
-  transparent: 'transparent',
+import { Type } from "./button.types";
+
+type Colors = {
+  [K in Type]?: string;
+}
+
+export const colors: Colors = {
+  primary: 'black',
+  secondary: 'blue'
 };
