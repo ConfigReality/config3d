@@ -2,10 +2,10 @@ import React from 'react';
 import { ButtonProps } from './button.types';
 import { colors } from './button.constants';
 
-export const Button: React.FC<ButtonProps> = ({ onPress, title, type = 'primary' }) => {
+export const Button: React.FC<ButtonProps> = ({ title, type = 'primary' }) => {
     // Web environment
     return (
-      <button onClick={onPress} style={{
+      <button style={{
         padding: '10px 20px',
         backgroundColor: colors[type],
         color: 'white',

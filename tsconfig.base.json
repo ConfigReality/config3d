@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "supabase-shared": ["libs/supabase-shared/src/index.ts"],
       "ui": ["libs/ui/src/index.ts"]
     }
   },

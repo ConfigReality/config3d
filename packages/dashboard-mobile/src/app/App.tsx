@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -11,12 +11,19 @@ import {
   Linking,
 } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
+// import { getProjects } from 'supabase-shared';
 import { Button } from 'ui';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
-
+  
+//   useEffect(function(){ 
+//     (async ()=>{
+//       try{const {data} = await getProjects();
+//       console.log(data);}catch(err){console.log(err)}
+//   })()
+// }, []);
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,7 +47,7 @@ export const App = () => {
               role="heading"
             >
               Welcome Dashboard Mobile 👋
-              <Button onPress={() => {}} title="Press me" />
+              <Button onPress={() => { console.log('press') }} title="Press me" />
             </Text>
           </View>
           <View style={styles.section}>

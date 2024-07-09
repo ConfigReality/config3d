@@ -1,8 +1,10 @@
-"use client"
 import React from 'react';
 import { Button } from 'ui';
+import {getProjects} from 'supabase-shared';
 
-export default function Index() {
+export default async function Index() {
+  
+  const {data} = await getProjects()
   /*
    * Replace the elements below with your own.
    *
@@ -17,7 +19,7 @@ export default function Index() {
               <span> Hello there, </span>
               Welcome dashboard-web 👋
             </h1>
-            <Button onPress={() => console.log('Button pressed')} title="Press me" />
+            <Button title="Press me" />
           </div>
 
           <div id="hero" className="rounded">
@@ -465,6 +467,7 @@ export default function Index() {
               />
             </svg>
           </p>
+        <pre><code>{JSON.stringify(data?.map(m=>m.name), null, 2)}</code></pre>
         </div>
       </div>
     </div>
