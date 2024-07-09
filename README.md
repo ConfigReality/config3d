@@ -12,23 +12,17 @@ comes with a LSP for Vim users.
 
 ## Nx plugins and code generators
 
-Add Nx plugins to leverage their code generators and automated, inferred tasks.
-
 ```
-# Add plugin
-npx nx add @nx/react
+nx add @nx/react-native
 
-# Use code generator
-npx nx generate @nx/react:app demo
+nx g @nx/react-native:app <your-app-name>
 
-# Run development server
-npx nx serve demo
+nx add @nx/next
 
-# View project details
-npx nx show project demo --web
+nx g @nx/next:app <your-app-name>
+
+nx g @nrwl/react:library ui
 ```
-
-Run `npx nx list` to get a list of available plugins and whether they have generators. Then run `npx nx list <plugin-name>` to see what generators are available.
 
 Learn more about [code generators](https://nx.dev/features/generate-code) and [inferred tasks](https://nx.dev/concepts/inferred-tasks) in the docs.
 
